@@ -1,26 +1,23 @@
 import React from 'react'
 import {render} from 'react-dom'
 import Base from './home.js';
-import Background from './images/white2.jpg';
+import Background from './images/white_tree.jpg';
+import './index.css';
+import App from './App.js'
 
 const style = {
-    height: '700px',
+    height: '100vh',
     opacity: '0.7',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundImage: `url(${ Background })`
 }
 
-const Books = () => {
-    return (
-        <div>welcome to books world!</div>
-    )
-}
+
 render(
-    <div style={style}>
+    <div>
         <Base />
-        <h1 id='title' className='header'>React-App-Started</h1>
-        <Books />
+        <h1 id='title' className='header' style={style}>Amandeep Sindhar</h1>
     </div>,
     document.getElementById('root')
 )
